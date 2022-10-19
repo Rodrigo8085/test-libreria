@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc",
-    "prepare": "npm run build"
+    "ng": "ng",
+    "prepare ": "ng build"
   },
   "private": false,
   "dependencies": {
