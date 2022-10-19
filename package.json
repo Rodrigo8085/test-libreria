@@ -3,9 +3,8 @@
   "version": "0.0.1",
   "main": "lib/index.js",
   "scripts": {
-    "build": "echo DO WHAT YOU NEED TO BUILD",
-    "prepack": "[ ! -f .buildme ] || npm run build",
-    "preinstall": "[ ! -f .buildme ] || npm run build"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "private": false,
   "dependencies": {
