@@ -3,12 +3,8 @@
   "version": "0.0.1",
   "main": "dist/index.js",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
     "prepare": "npm run build",
-    "build": "webpack src/index.js dist/index.js",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "build": "webpack src/index.js dist/index.js"
   },
   "private": false,
   "dependencies": {
