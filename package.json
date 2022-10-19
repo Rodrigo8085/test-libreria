@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "npm run build",
+    "install": "npm run build",
     "build": "webpack src/index.js dist/index.js"
   },
   "private": false,
