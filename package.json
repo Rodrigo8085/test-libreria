@@ -3,8 +3,17 @@
   "version": "0.0.1",
   "main": "lib/index.js",
   "scripts": {
-    "ng": "ng",
-    "prepare ": "ng build"
+    "start": "run-p lib:watch showcase:start-waiton",
+    "build": "run-s lib:build showcase:build",
+    "test": "run-p lib:test showcase:test",
+    "lib:build": "ng build @mycomp/ui-sdk",
+    "lib:watch": "ng build @mycomp/ui-sdk --watch --configuration development",
+    "lib:test": "ng test @mycomp/ui-sdk",
+    "showcase:start-waiton": "wait-on dist/mycomp/ui-sdk/package.json && npm run showcase:start",
+    "showcase:start": "ng serve showcase",
+    "showcase:build": "ng build showcase",
+    "showcase:watch": "ng build showcase --watch --configuration development",
+    "showcase:test": "ng test showcase"
   },
   "private": false,
   "dependencies": {
