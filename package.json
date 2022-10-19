@@ -1,9 +1,10 @@
 {
   "name": "@Rodrigo8085/test-libreria",
   "version": "0.0.1",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "install": "npm run build"
+    "start": "npm run build",
+    "build": "npm run build:umd && npm run build:lib"
   },
   "private": false,
   "dependencies": {
