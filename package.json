@@ -1,6 +1,7 @@
 {
   "name": "@Rodrigo8085/test-libreria",
   "version": "0.0.1",
+  "main": "dist/index.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
