@@ -1,11 +1,6 @@
 {
   "name": "button-alert",
   "version": "0.0.1",
-  "main": "dist/index.js",
-  "scripts": {
-    "prepare": "npm run build",
-    "build": "webpack src/index.js dist/index.js"
-  },
   "peerDependencies": {
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0"
