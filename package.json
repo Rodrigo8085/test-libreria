@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "lib/index.js",
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "dist",
     "prebuild": "npm run clean",
     "build": "NODE_ENV=production webpack"
   },
