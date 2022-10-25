@@ -6,7 +6,8 @@
     "ng": "ng",
     "build_lib": "ng build button-alert",
     "npm_pack": "cd dist/button-alert && npm pack",
-    "package": "npm run build_lib && npm run npm_pack"
+    "package": "npm run build_lib && npm run npm_pack",
+    "start" : "npm run package"
   },
   "private": false,
   "dependencies": {
