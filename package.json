@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "lib/index.js",
   "scripts": {
+    "ng": "ng",
     "build_lib": "ng build button-alert",
     "npm_pack": "cd dist/button-alert && npm pack",
     "package": "npm run build_lib && npm run npm_pack"
