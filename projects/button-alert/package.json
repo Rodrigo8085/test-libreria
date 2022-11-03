@@ -5,7 +5,16 @@
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0"
   },
+  "author": "Rodrigo Santiago",
+    "license": "MIT",
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "ngPackage": {
+    "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+    "lib": {
+      "entryFile": "public_api.ts"
+    },
+    "dest": "dist"
   }
 }
