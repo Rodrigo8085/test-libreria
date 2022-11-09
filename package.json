@@ -1,14 +1,10 @@
 {
-  "name": "@Rodrigo8085/test-libreria",
-  "version": "0.0.1",
-  "main": "lib/index.js",
+  "name": "test-libreria",
+  "version": "0.0.2",
+  "main": "dist/index.js",
   "scripts": {
-    "ng": "ng",
-    "build_lib": "ng build button-alert",
-    "npm_pack": "cd dist/button-alert && npm pack",
-    "package": "npm run build_lib && npm run npm_pack",
-    "start" : "npm run package",
-    "build:production": "npm run build_lib --prod --aot --build-optimizer --common-chunk --vendor-chunk --optimization --progress --configuration=production"
+    "prepare": "npm run build",
+    "build": "webpack src/index.js dist/index.js"
   },
   "private": false,
   "dependencies": {
@@ -37,12 +33,5 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "ng-packagr": "^14.0.0",
     "typescript": "~4.7.2"
-  },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Rodrigo8085/socialLoginAF.git"
   }
 }
