@@ -7,7 +7,8 @@
     "build_lib": "ng build button-alert",
     "npm_pack": "cd dist/button-alert && npm pack",
     "package": "npm run build_lib && npm run npm_pack",
-    "start" : "npm run package"
+    "start" : "npm run package",
+    "build:production": "npm run build_lib --prod --aot --build-optimizer --common-chunk --vendor-chunk --optimization --progress --configuration=production"
   },
   "private": false,
   "dependencies": {
