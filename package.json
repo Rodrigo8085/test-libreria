@@ -2,12 +2,9 @@
   "name": "test-libreria",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "build:lib": "ng-packagr -p projects/button-alert/package.json"
+    "build_lib": "ng build button-alert",
+    "npm_pack": "cd dist/button-alert && npm pack",
+    "package": "npm run build_lib && npm run npm_pack"
   },
   "private": true,
   "dependencies": {
