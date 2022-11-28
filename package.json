@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "scripts": {
     "prepare": "npm run build",
-    "build": "webpack src/index.js dist/index.js"
+    "build": "webpack src/public-api.ts dist/index.js"
   },
   "private": false,
   "dependencies": {
